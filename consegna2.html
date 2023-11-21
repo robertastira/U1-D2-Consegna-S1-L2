@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo Pagina Web</title>
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
+    />
+    <style>
+      #intestazione {
+        color: blueviolet;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #menu {
+        color: aquamarine;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #articolo {
+        color: palevioletred;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+        #text {
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #tabella {
+        color: aquamarine;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #form {
+        color: blueviolet;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #link {
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #aside {
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-small;
+      }
+      #footer {
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(41, 41, 43)">
+    <img src="./assets/img/logo.svg" alt="Logo" width="400" />
+    <header id="intestazione">
+      <div id="titolo">
+        <h1>Epicode</h1>
+        <h2><em>Il blog dei Developers</em></h2>
+      </div>
+      <div id="menu">
+        <p>Home</p>
+        <p>Articoli</p>
+        <p>Lavora con noi</p>
+      </div>
+    </header>
+    <main id="post">
+      <div id="articolo">
+        <h3>Come creare un template per i post</h3>
+        <h4>di Mario Rossi</h4>
+      </div>
+      <div id="text">
+        <p>La prima cosa da fare è suddividere in blocchi la pagina, identificando le parti comuni da applicare a tutte le pagine.</p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+            <ul>
+            <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+            <li>Contenuti centrali variabili del tag &lt;main&gt;</li>
+            <li>Contenuti di fine pagina comuni da inserire nel tag &lt;footer&gt;</li>
+          </ul>
+          <h5>Formattazione del Codice</h5>
+          <p> Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS.
+          </p>
+          <p>Perciò i passi saranno:</p>
+            <ol>
+                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+            </ol>
+          <p> L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+      </div>
+      <div id="tabella">
+        <table border="1">
+          <thead>
+            <caption>
+              Diffusione del CSS
+            </caption>
+          </thead>
+          <tr>
+            <td>Anno</td>
+            <td>% di utilizzo</td>
+            <td>Supporto browser</td>
+          </tr>
+          <tr>
+            <td>2000</td>
+            <td>20%</td>
+            <td>17%</td>
+          </tr>
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>45%</td>
+            <td>42%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>76%</td>
+          </tr>
+        </table>
+    </div>
+        <div id="link">
+            <p>Un test di validazione potrà essere fatto tramite il <a
+                href="https://jigsaw.w3.org/css-validator/" target="/blank"
+                >tool online</a
+              > dedicato allo scopo.</p>
+            <p>Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere dei nuovi developers come loro:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aBSZVeBRvDY?si=X1TxMwERgbM87aBG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+<aside id="aside">
+            <h4>Articoli correlati:</h4>
+            <p>Validare il Codice HTML</p>
+            <p>Categoria: develop</p>
+            <p>Data: 18-9-2020</p>
+            </br>
+            <p>Correggere la sintassi</p>
+            <p>Categoria: develop</p>
+            <p>Data: 16-9-2020</p>
+        </br>
+        <p>Meno Kb nella pagina</p>
+        <p>Categoria: ottimizzazione</p>
+        <p>Data: 30-9-2020</p>
+        </aside>
+    <div id="form">
+        <p>Vuoi rimanere aggiornato su altre novità del blog?</p>
+        <p>Iscriviti alla nostra Newsletter:</p>
+        <form><input type="mail" placeholder="inserisci l'email">
+        <p><button type="button" autofocus>Iscriviti!</button></p>
+    </form>
+</div>
+</main>
+    <footer id="footer">Pubblicato il 25-10-2020
+        </p>
+    </footer>
+  </body>
+</html>
